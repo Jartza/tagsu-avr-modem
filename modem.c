@@ -33,10 +33,11 @@ static inline void modem_buffer_put(const uint8_t c) {
  * Fetch 1 byte from ringbuffer
  */
 uint8_t modem_buffer_get() {
+	uint8_t b = 0;
 	if (modem_buffer_available() != 0) {
-		return modem_buffer[modem_buffer_tail++ % MODEM_BUFFER_SIZE];
+		b = modem_buffer[modem_buffer_tail++ % MODEM_BUFFER_SIZE];
 	}
-	return;
+	return b;
 }
 
 /*
