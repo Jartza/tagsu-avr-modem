@@ -50,8 +50,8 @@ ISR(PCINT0_vect) {
 	static uint8_t modem_byte = 0;
 
 	/* Read & Zero Timer/Counter 1 value */
-	uint8_t modem_pulselen = TCNT1;
-	TCNT1 = 0;
+	uint8_t modem_pulselen = MODEM_TIMER;
+	MODEM_TIMER = 0;
 
 	/*
 	 * Check if we received Start/Sync -pulse.
