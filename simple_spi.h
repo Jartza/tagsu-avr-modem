@@ -2,7 +2,7 @@
  *
  * Author: Jari Tulilahti
  * Copyright: 2014 Rakettitiede Oy
- * License: GPLv3, see COPYING -file for more info
+ * License: LGPLv3, see COPYING, and COPYING.LESSER -files for more info
  */
 
 #pragma once
